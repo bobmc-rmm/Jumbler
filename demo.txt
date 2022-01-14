@@ -1,0 +1,59 @@
+_Examples from jumble.c (program) 2022-jan-14
+_Words such as "zebra" (aberz) have one solution
+_Words with repeat letters such as "limit' are printed 2 or more times
+_Some jumble words have more than one solution. See "stream"
+_Jumble letters can be entered in any order, they are sorted before search
+_Sorting the letters is followed by a sequential index
+_The index is processed to ease permutation of the letters
+
+./jumble zebra
+zebra.. aberz sorted
+[zebra = zebra]
+
+./jumble dretn
+dretn.. denrt sorted
+[trend = trend]
+
+./jumble limit
+limit.. iilmt sorted
+[limit = limit]
+[limit = limit]
+
+./jumble atubye
+atubye.. abetuy sorted
+[beauty = beauty]
+
+./jumble gazebo
+gazebo.. abegoz sorted
+[gazebo = gazebo]
+
+./jumble solfis
+solfis.. filoss sorted
+[fossil = fossil]
+[fossil = fossil]
+
+./jumble giarenw
+giarenw.. aeginrw sorted
+[wearing = wearing]
+
+./jumble zodiac
+zodiac.. acdioz sorted
+[zodiac = zodiac]
+
+./jumble stream
+stream.. aemrst sorted
+[master = master]
+[stream = stream]
+[tamers = tamers]
+
+./jumble anyway
+anyway.. aanwyy sorted
+[anyway = anyway]
+[anyway = anyway]
+[anyway = anyway]
+[anyway = anyway]
+
+./jumble osahwgh
+osahwgh.. aghhosw sorted
+[hogwash = hogwash]
+[hogwash = hogwash]
